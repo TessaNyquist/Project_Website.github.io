@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title>My Portfolio</title>
 <meta name="theme-color" content="#fafaf9"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>My Portfolio</title>
+<meta name="theme-color" content="#fafaf9"/>
 <style>
 * {
   box-sizing: border-box;
@@ -16,6 +21,7 @@
 /* Style the body */
 body {
   font-family: Times New Roman;
+  font-family: Times New Roman;
   margin: 0;
 }
 
@@ -23,6 +29,7 @@ body {
 .header {
   padding: 80px;
   text-align: center;
+  background: #D3D3D3;
   background: #D3D3D3;
   color: white;
 }
@@ -107,6 +114,8 @@ body {
   text-align: center;
   background: #eee;
   color: #333;
+  background: #eee;
+  color: #333;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -142,7 +151,28 @@ body {
     </div>
   </div>
 
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <div class="navbar">
+        <a href="#home" class="w3-bar-item w3-button"><b>Tessa Nyquist</a>
+          <!-- Float links to the right. Hide them on small screens -->
+          <div class="w3-right w3-hide-small">
+            <a href="#" class="active">Home</a>
+            <a href="#">Contact Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Blog</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
 <div class="header">
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="Image/caleb-perez-a6h5e59r15o-unsplash.jpg" width="500" height="200">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Welcome</b></span></h1>
+    </div>
+  </header>  
   <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
     <img class="w3-image" src="Image/caleb-perez-a6h5e59r15o-unsplash.jpg" width="500" height="200">
     <div class="w3-display-middle w3-margin-top w3-center">
@@ -152,25 +182,25 @@ body {
 </div>
 
 
+
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
-    <img class="w3-image" src="Tessa-Banner.png"width="1500" height="800">
+    <h5>Photo of me:</h5>
+    <img class="w3-image" src="Image/Tessa-Banner.png"width="1500" height="800">
     <p>A recent graduate of James Madison University. I earned a B.A. in Political Science and a B.S. in Computer Science, and I received the NSA Information Systems Security Professionals Certification.  While at James Madison University, I served on the executive board of Student Defenders, helping other students navigate the school’s disciplinary process.  I previously worked for an employment firm. I am passionate about helping others and intends to enter law school in the near future. </p>
-    <h3>Educational Background </h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <!-- Here I want to highlight my degrees and continuing education -->
+    <h3>Educational background</h3>
     <div class="fakeimg" style="height:60px;">Image</div><br>
     <div class="fakeimg" style="height:60px;">Image</div><br>
     <div class="fakeimg" style="height:60px;">Image</div>
   </div>
   <div class="main">
-    <h2>Projects are coming soon...<h2>
-    <h4>Stay tuned!</h4>
-    <img class="w3-image" src="Computerscience.avif"style="height:400px;" id="home">
-    <h2> Projects are coming soon...<h2>
-    <h4> Stay tuned!</h4>
-    <img class="w3-image" src="DC.avif"style="height:400px;" id="home">
+      <h2>Projects are coming soon...<h2>
+        <h4>Stay tuned!</h4>
+        <img class="w3-image" src="Image/Computerscience.avif"style="height:400px;" id="home">
+        <h2> Projects are coming soon...<h2>
+        <h4> Stay tuned!</h4>
+        <img class="w3-image" src="Image/DC.avif"style="height:400px;" id="home">
   </div>
 </div>
 
