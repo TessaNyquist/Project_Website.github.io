@@ -105,7 +105,8 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #ddd;
+  background: #eee;
+  color: #333;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -126,16 +127,30 @@ body {
 </head>
 <body>
 
-<div class="header">
-  <h1>Tessa's Profolio Website</h1>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <div class="navbar">
+      <a href="#home" class="w3-bar-item w3-button"><b>Tessa Nyquist</a>
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#" class="active">Home</a>
+          <a href="#">Contact Me</a>
+          <a href="#">Projects</a>
+          <a href="#">Link</a>
+        </div>
+    </div>
+  </div>
 </div>
 
-<div class="navbar">
-  <a href="#" class="active">Home</a>
-  <a href="#">Contact Me</a>
-  <a href="#">Projects</a>
-  <a href="#">Link</a>
+<div class="header">
+  <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+    <img class="w3-image" src="caleb-perez-a6h5e59r15o-unsplash.jpg" width="1000" height="400">
+    <div class="w3-display-middle w3-margin-top w3-center">
+      <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Welcome</b></span></h1>
+    </div>
+  </header>  
 </div>
+
 
 <div class="row">
   <div class="side">
