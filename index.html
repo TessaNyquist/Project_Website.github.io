@@ -197,10 +197,11 @@ input[type=submit]:hover {
             <a href="#">Tessa Nyquist</a>
           <!-- Float links to the right. Hide them on small screens -->
           <div class="w3-right w3-hide-small">
-            <a href="#" class="active">Home</a>
-            <a href="#">Contact Me</a>
-            <a href="#">Projects</a>
-            <a href="#">Blog</a>
+            <a href="#Home" class="active">Home</a>
+            <a href="#Contact Me"> Contact Me</a>
+            <!--<a href="#Contact Me" class="w3-bar-item w3-button">Contact Me</a>-->
+            <a href="#Projects">Projects</a>
+            <a href="#Blog">Blog</a>
           </div>
       </div>
     </div>
@@ -233,39 +234,20 @@ input[type=submit]:hover {
 </div>
 
 <!-- Contact Section -->
-<div class="container">
-  <div style="text-align:center">
-    <h2>Contact Me</h2>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img class="w3-image" src="Image/DC.avif"style="height:400px;" id="home">
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <hr class="w3-opacity">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-section">
-            <label>Name</label>
-            <input class="w3-input w3-border" type="text" name="Name" required>
-          </div>
-          <div class="w3-section">
-            <label>Email</label>
-            <input class="w3-input w3-border" type="text" name="Email" required>
-          </div>
-          <div class="w3-section">
-            <label>Message</label>
-            <input class="w3-input w3-border" type="text" name="Message" required>
-          </div>
-          <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-        </form>
-      </div>
-      </form>
-    </div>
-  </div>
+<div class="w3-container w3-padding-32" id="Contact Me">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
+  <form action="/action_page.php" target="_blank">
+    <!--<img class="w3-image" src="Image/DC.avif"style="height:400px;" id="home"> -->
+    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+    <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+    <button class="w3-button w3-black w3-section" type="submit">
+      <i class="fa fa-paper-plane"></i> SEND MESSAGE
+    </button>
+  </form>
 </div>
-</body>
-</html>
+
 
 <div class="footer">
   <div data-ux="Block" data-aid="SOCIAL_SOCIAL_LINKS" class="x-el x-el-div c1-1 c1-2 c1-t c1-2z c1-cp c1-cq c1-4i c1-4j c1-9u c1-cr c1-cs c1-b c1-c c1-d c1-e c1-f c1-g">
