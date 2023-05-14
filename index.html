@@ -15,11 +15,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>My Portfolio</title>
-<meta name="theme-color" content="#fafaf9"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -42,6 +39,7 @@ body {
 /* Increase the font size of the heading */
 .header h1 {
   font-size: 40px;
+  font-family: Times New Roman;
 }
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
@@ -51,6 +49,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  font-family: Times New Roman;
 }
 
 /* Style the navigation bar links */
@@ -121,6 +120,58 @@ body {
   color: #333;
 }
 
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -141,7 +192,9 @@ body {
   <div class="w3-top">
     <div class="w3-bar w3-white w3-wide w3-padding w3-card">
       <div class="navbar">
-        <a href="#home" class="w3-bar-item w3-button"><b>Tessa Nyquist</a>
+        <a href="#home" class="w3-bar-item w3-button"></a>
+          <div class="w3-left w3-hide-small"></div>
+            <a href="#">Tessa Nyquist</a>
           <!-- Float links to the right. Hide them on small screens -->
           <div class="w3-right w3-hide-small">
             <a href="#" class="active">Home</a>
@@ -176,11 +229,43 @@ body {
       <h2>Projects are coming soon...<h2>
         <h4>Stay tuned!</h4>
         <img class="w3-image" src="Image/Computerscience.avif"style="height:400px;" id="home">
-        <h2> Projects are coming soon...<h2>
-        <h4> Stay tuned!</h4>
-        <img class="w3-image" src="Image/DC.avif"style="height:400px;" id="home">
   </div>
 </div>
+
+<!-- Contact Section -->
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Me</h2>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="w3-image" src="Image/DC.avif"style="height:400px;" id="home">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <hr class="w3-opacity">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Name</label>
+            <input class="w3-input w3-border" type="text" name="Name" required>
+          </div>
+          <div class="w3-section">
+            <label>Email</label>
+            <input class="w3-input w3-border" type="text" name="Email" required>
+          </div>
+          <div class="w3-section">
+            <label>Message</label>
+            <input class="w3-input w3-border" type="text" name="Message" required>
+          </div>
+          <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+        </form>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
 
 <div class="footer">
   <div data-ux="Block" data-aid="SOCIAL_SOCIAL_LINKS" class="x-el x-el-div c1-1 c1-2 c1-t c1-2z c1-cp c1-cq c1-4i c1-4j c1-9u c1-cr c1-cs c1-b c1-c c1-d c1-e c1-f c1-g">
