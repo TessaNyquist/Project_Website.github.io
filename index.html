@@ -4,7 +4,7 @@
 <!-- May want to restructure code-->
 <!-- Add Resume button -->
 <!-- Google Analaytics-->
- <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3VRD21RD8D"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -33,10 +33,10 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
-  text-align: center;
   background: #D3D3D3;
   color: white;
+  padding: 80px;
+  text-align: center;
 }
 
 /* Increase the font size of the heading */
@@ -47,21 +47,21 @@ body {
 
 /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
 .navbar {
-  overflow: hidden;
   background-color: #333;
+  font-family: Times New Roman;
+  overflow: hidden;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  font-family: Times New Roman;
 }
 
 /* Style the navigation bar links */
 .navbar a {
-  float: left;
-  display: block;
   color: white;
-  text-align: center;
+  display: block;
+  float: left;
   padding: 14px 20px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -94,17 +94,19 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
+  background-color: #f1f1f1;
+  font-family: Times New Roman;
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #f1f1f1;
   padding: 20px;
 }
 
 /* Main column */
 .main {   
+  background-color: white;
+  font-family: Times New Roman;
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: white;
   padding: 20px;
 }
 
@@ -117,10 +119,10 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
-  text-align: center;
   background: #eee;
   color: #333;
+  padding: 20px;
+  text-align: center;
 }
 
 /* Style inputs */
@@ -155,9 +157,9 @@ input[type=submit]:hover {
 /* Create two columns that float next to eachother */
 .column {
   float: left;
-  width: 50%;
   margin-top: 6px;
   padding: 20px;
+  width: 50%;
 }
 
 /* Clear floats after the columns */
@@ -201,10 +203,10 @@ input[type=submit]:hover {
           <!-- Float links to the right. Hide them on small screens -->
           <div class="w3-right w3-hide-small">
             <a href="index.html" class="active">Home</a>
-            <a href="#Contact Me"> Contact Me</a>
             <!--<a href="#Contact Me" class="w3-bar-item w3-button">Contact Me</a>-->
             <a href="OtherPages/projects.html">Projects</a>
             <a href="OtherPages/Blog.html">Blog</a>
+            <a href="#Contact Me"> Contact Me</a>
           </div>
       </div>
     </div>
@@ -212,7 +214,7 @@ input[type=submit]:hover {
 
 <div class="header">
   <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-    <img class="w3-image" src="Image/caleb-perez-a6h5e59r15o-unsplash.jpg" width="500" height="200">
+    <img class="w3-image" src="Image/caleb-perez-a6h5e59r15o-unsplash.jpg" width="1000" height="400">
     <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Welcome</b></span></h1>
     </div>
@@ -220,29 +222,54 @@ input[type=submit]:hover {
 </div>
 
 <div class="row">
+
   <div class="side">
-    <h2>About Me</h2>
+    <h2 Style="font-family: 'Times New Roman', Times;"> About Me</h2>
       <img class="w3-image" src="Image/Tessa-Banner.png"width="1500" height="800">
-      <p>A recent graduate of James Madison University. I earned a B.A. in Political Science and a B.S. in Computer Science, and I received the NSA Information Systems Security Professionals Certification.  While at James Madison University, I served on the executive board of Student Defenders, helping other students navigate the school’s disciplinary process.  I previously worked for an employment firm. I am passionate about helping others and intends to enter law school in the near future. </p>
-      <h3>Educational background</h3>
-      <p> Bachelor of Arts in Political Science</p>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <p> Bachelor of Science in Computer Science </p>
-      <div class="fakeimg" style="height:60px;">Image</div><br>
-      <p>National Security Agency (NSA) Information Systems Security Professionals Certification</p>
-      <div class="fakeimg" style="height:60px;">Image</div>
+      <p>Recently, I graduated from James Madison University. I earned a B.A. in Political Science and a B.S. in Computer Science, and I received the NSA Information Systems Security Professionals Certification.  While at James Madison University, I served on the executive board of Student Defenders, helping other students navigate the school’s disciplinary process.  I currently work for an employment firm in Washington, D.C. I am passionate about how technology can be used to help others and hope to transition to a tech role in the near future. </p>
+      <h3 Style="font-family: 'Times New Roman', Times;">Educational background</h3>
+      <ul>
+        <li>Bachelor of Arts in Political Science</li>
+        <li>Bachelor of Science in Computer Science </li>
+        <li>National Security Agency (NSA) Information Systems Security Professionals Certification </li>
+      </ul>
     </div>
+
   <div class="main">
       <!-- Center fonts and make fonts times new roman-->
-      <h2>Projects are coming soon...<h2>
-        <h4>Stay tuned!</h4>
-        <img class="w3-image" src="Image/Computerscience.avif"style="height:400px;" id="home">
+      <h2 Style="font-family: 'Times New Roman', Times;"> Background<h2>
+        <h3 style="font-family: 'Times New Roman', Times; text-indent: 2pc;"> Work Experience</h3>
+          <h6 style="font-family: 'Times New Roman', Times; text-indent: 4pc;"> Legal Administrative Assistant at Alan Lescht and Associates (July 2022 – Present)</h6>
+          <h6 style="font-family: 'Times New Roman', Times; text-indent: 4pc;"> Summer Intern at Alan Lescht and Associates (July 2021 – August 2021)</h6>
+          <h6 style="font-family: 'Times New Roman', Times; text-indent: 4pc;"> Summer Intern at Alan Lescht and Associates (June 2019 – August 2019)</h6>
+        <h3 style="font-family: 'Times New Roman', Times; text-indent: 2pc;"> Relevant Coursework</h3>
+          <ul>
+            <li>Math 220 Elementary Statistics</li>
+            <li>Math 232 Calculus with Functions II</li>
+            <li>CS430 Applied Algorithms</li>
+          </ul>
+        <h3 style="font-family: 'Times New Roman', Times; text-indent: 2pc;">Languages</h3>
+          <h6 Style="font-family: 'Times New Roman', Times; text-indent: 2pc;"> C, Java, Python, HTML</h6>
+        <h2 Style="font-family: 'Times New Roman', Time;"> Download Resumè</h2>
+            <h4 Style="font-family: 'Times New Roman', Times;"> Still in the works...</h4>
+            <!--Current Projects -->
+        <h2 Style="font-family: 'Times New Roman', Time;"> Top Projects</h2>
+            <!--School Projects -->
+        <h2 Style="font-family: 'Times New Roman', Time;"> School Projects</h2>
+            <h4 Style="font-family: 'Times New Roman', Time;"> Incomplete list of projects w/ descriptions will update shortly</h4>
+              <ul>
+                <li>Hacking for Diplomacy</li>
+                <li>Data Recovery Project </li>
+              </ul>
+          </div>
+        <!--img class="w3-image" src="Image/Computerscience.avif"style="height:400px;" id="home"-->
   </div>
 </div>
 
 <!-- Contact Section -->
+<!-- I should add a linkedIn button to this-->
 <div class="w3-container w3-padding-32" id="Contact Me">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Me</h3>
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16" Style="font-family: 'Times New Roman', Time;">Contact Me</h3>
   <form action="/action_page.php" target="_blank">
     <!--<img class="w3-image" src="Image/DC.avif"style="height:400px;" id="home"> -->
     <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
