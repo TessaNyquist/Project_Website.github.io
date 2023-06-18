@@ -5,6 +5,9 @@ import Container from './react-bootstrap/Container';
 import Card from './react-bootstrap/Card';
 import Row from './react-bootstrap/Row';
 import Col from './react-bootstrap/Col';
+import Navbar from './react-bootstrap/Navbar';
+
+
 //import ButtonGroup from './react-bootstrap/ButtonGroup';
 //import Accordion from './react-bootstrap/Accordion';
 
@@ -35,10 +38,21 @@ function AboutMe (){
 function Header() {
   return (  
     <Container fluid>
+      <MyNavbar />
       <Row>
         <Col>Header </Col>
       </Row>
     </Container>);
+}
+/**
+ * 
+ * @returns 
+ */
+function MyNavbar() {
+  return (
+    <Navbar expand="lg" className="bg-body-tertiary">
+    </Navbar>
+  );
 }
 
 /**
