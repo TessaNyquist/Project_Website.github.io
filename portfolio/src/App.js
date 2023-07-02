@@ -3,7 +3,6 @@ import './App.css';
 import TessaBanner from './TessaBanner.png';
 import Container from './react-bootstrap/Container';
 import Card from './react-bootstrap/Card';
-import Row from './react-bootstrap/Row';
 import Button from './react-bootstrap/Button';
 import Form from './react-bootstrap/Form';
 //import Col from './react-bootstrap/Col';
