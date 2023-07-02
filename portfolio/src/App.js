@@ -4,8 +4,11 @@ import TessaBanner from './TessaBanner.png';
 import Container from './react-bootstrap/Container';
 import Card from './react-bootstrap/Card';
 import Row from './react-bootstrap/Row';
+import Button from './react-bootstrap/Button';
+import Form from './react-bootstrap/Form';
 //import Col from './react-bootstrap/Col';
-import Navbar from './react-bootstrap/Navbar';
+
+
 
 
 
@@ -37,24 +40,18 @@ function AboutMe (){
 /**
  * 
  * @returns 
+
  */
 function Header() {
   return (  
     <Container>
-        <Navbar className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
-          <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
-              Signed in as: <a href="#login">Mark Otto</a>
-            </Navbar.Text>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <Card className="bg-dark text-white"> 
+        <Card.Header>PlaceHolder for Navbar</Card.Header>
+      </Card> 
     </Container>
   );
 }
+
 
 /**
  * This method currently outlines the ContactMe method at the bottom of my webpage.
@@ -75,13 +72,35 @@ function ContactMe() {
     </Container>);
 }
 
-/*       <Button variant="secondary" size="md">
-          Educational Background
-        </Button>
-        <Button variant="secondary" size="md">
-          Work Experience
-        </Button>
-        */
+/**
+ * This method currently outlines the ContactMe method at the bottom of my webpage.
+ * @returns 
+ */
+function ContactMeForm() {
+  return (  
+    <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" />
+        <Form.Text className="text-muted">
+          We'll never share your email with anyone else.
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>Password</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+  );
+}
+
 /**
  * 
  * @returns 
@@ -110,6 +129,7 @@ export default function App() {
       <Header />
       <AboutMe />
       <ContactMe />
+      <ContactMeForm />
     </Container>
     );
 }
