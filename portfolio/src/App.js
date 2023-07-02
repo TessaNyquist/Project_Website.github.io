@@ -4,8 +4,9 @@ import TessaBanner from './TessaBanner.png';
 import Container from './react-bootstrap/Container';
 import Card from './react-bootstrap/Card';
 import Row from './react-bootstrap/Row';
-import Col from './react-bootstrap/Col';
+//import Col from './react-bootstrap/Col';
 import Navbar from './react-bootstrap/Navbar';
+
 
 
 //import ButtonGroup from './react-bootstrap/ButtonGroup';
@@ -19,15 +20,17 @@ import Navbar from './react-bootstrap/Navbar';
 function AboutMe (){
   let bio = "A native Northern Virginian, I completed my B.A. in political science and B.S. in computer science from James Madison University (JMU) in 2022, and received the NSA Information Systems Security Professionals Certification.  While attending JMU, I assisted fellow students navigate the university’s disciplinary process while I served on the executive board of Student  Defenders. Currently, I am serving as a legal assistant at an employment law firm in Washington, D.C., where I assist prospective clients in navigating the firm’s intake process, while leveraging my background in computer science to automate processes. I am passionate about serving back in the community I grew up in and is interested in pursuing opportunities in the tech industry in the Washington, D.C. metro.";
   return (
-  <Card className="bg-dark text-white"> 
-    <Card.Header>About Me</Card.Header>
-    <Card.Img variant="top" src={TessaBanner} />
-    <Card.Body>
-      <Card.Text>
-        {bio}
-      </Card.Text>
-    </Card.Body>
-  </Card> 
+    <Container>
+      <Card className="bg-dark text-white"> 
+        <Card.Header>About Me</Card.Header>
+        <Card.Img variant="top" src={TessaBanner} />
+        <Card.Body>
+          <Card.Text>
+            {bio}
+          </Card.Text>
+        </Card.Body>
+      </Card> 
+    </Container>
   );
 }
 
@@ -37,21 +40,19 @@ function AboutMe (){
  */
 function Header() {
   return (  
-    <Container fluid>
-      <MyNavbar />
-      <Row>
-        <Col>Header </Col>
-      </Row>
-    </Container>);
-}
-/**
- * 
- * @returns 
- */
-function MyNavbar() {
-  return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-    </Navbar>
+    <Container>
+        <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="justify-content-end">
+            <Navbar.Text>
+              Signed in as: <a href="#login">Mark Otto</a>
+            </Navbar.Text>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </Container>
   );
 }
 
