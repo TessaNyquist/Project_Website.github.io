@@ -1,4 +1,4 @@
-import '../react-bootstrap';
+
 import Container from '../react-bootstrap/Container';
 import Card from '../react-bootstrap/Card';
 import TessaBanner from '../TessaBanner.png';
