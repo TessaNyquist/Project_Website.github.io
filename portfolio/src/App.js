@@ -5,7 +5,7 @@ import Header from './Components/Header';
 import ContactMeForm from './Components/ContactMe';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
-
+import ResumeButton from './Components/Resume_button';
 /**
  * 
  * @returns  
@@ -17,6 +17,7 @@ export default function App() {
       <Header />
       <AboutMe />
       <Skills />
+      <ResumeButton /> 
       <ContactMeForm />
     </Container>
     );
